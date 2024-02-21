@@ -2,11 +2,11 @@ package OrientcaoAObjetos;
 
 public class Carro {
 
-	String fabricante;
-	String modelo;
-	String cor;
-	int anoFabricacao;
-	Pessoa proprietario; // Do tipo 'Pessoa'
+	String fabricante = "Ford";
+    String modelo;
+    String cor;
+    int anoFabricacao = 2022;
+    Pessoa proprietario = new Pessoa(); // A Variavel proprietario Faz referencia a uma Pessoa
 	
 
 }

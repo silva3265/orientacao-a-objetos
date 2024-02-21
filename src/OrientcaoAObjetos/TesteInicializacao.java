@@ -1,16 +1,22 @@
 package OrientcaoAObjetos;
 
 public class TesteInicializacao {
-	
+
 	public static void main(String[] args) {
-        Carro meuCarro = new Carro();
+		Carro meuCarro = new Carro();
 
-        meuCarro.fabricante = "Honda";
-        meuCarro.anoFabricacao = 2021;
+		meuCarro.fabricante = "Honda";
+		meuCarro.anoFabricacao = 2021;
+		meuCarro.proprietario.nome = "Maria";
 
-        System.out.println(meuCarro.fabricante);
-        System.out.println(meuCarro.modelo);
-        System.out.println(meuCarro.anoFabricacao);
-    }
+		Pessoa proprietarioAntigo = meuCarro.proprietario;
+
+		meuCarro.proprietario = new Pessoa(); // Vai retornar o nome 'Joao' porque estamos atribuindo a um Novo Objeto Pessoa
+
+		System.out.println(meuCarro.fabricante);
+		System.out.println(meuCarro.modelo);
+		System.out.println(meuCarro.anoFabricacao);
+		System.out.println(meuCarro.proprietario.nome);
+	}
 
 }
