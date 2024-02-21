@@ -2,7 +2,7 @@ package OrientcaoAObjetos;
 
 public class Carro {
 
-	String fabricante = "Ford";
+	String fabricante;
     String modelo;
     String cor;
     int anoFabricacao = 2022;

@@ -2,7 +2,7 @@ package OrientcaoAObjetos;
 
 public class Pessoa {
 	
-	String nome = "João";
+	String nome;
     String cpf;
     int anoNascimento;
 
