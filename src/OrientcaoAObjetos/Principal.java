@@ -14,10 +14,11 @@ public class Principal {
 		voce.anoNascimento = 1992;
 
 		Carro meuCarro = new Carro();
-		meuCarro.anoFabricacao = 2021;
+		meuCarro.anoFabricacao = 2015;
 		meuCarro.cor = "Preto";
 		meuCarro.fabricante = "Honda";
 		meuCarro.modelo = "HR-V";
+		meuCarro.precoCompra = 120000;
 		meuCarro.proprietario = eu;
 
 		Carro seuCarro = new Carro();
@@ -25,6 +26,7 @@ public class Principal {
 		seuCarro.cor = "Branco";
 		seuCarro.fabricante = "BMW";
 		seuCarro.modelo = "X6";
+		seuCarro.precoCompra = 98000;
 		seuCarro.proprietario = voce;
 
 		meuCarro.calcularValorRevenda(); // Invocando Metodo
