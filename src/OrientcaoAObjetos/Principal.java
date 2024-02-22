@@ -16,9 +16,9 @@ public class Principal {
 		Carro meuCarro = new Carro();
 		meuCarro.anoFabricacao = 2021;
 		meuCarro.cor = "Preto";
-		meuCarro.fabricante = "Honda";
+		meuCarro.fabricante = "Honda"; 
 		meuCarro.modelo = "HR-V";
-		meuCarro.precoCompra = 120000;
+		meuCarro.precoCompra = 0;
 		meuCarro.proprietario = eu;
 
 		Carro seuCarro = new Carro();
@@ -28,6 +28,9 @@ public class Principal {
 		seuCarro.modelo = "X6";
 		seuCarro.precoCompra = 980000;
 		seuCarro.proprietario = voce;
+		
+//		double ipva = meuCarro.calcularIpva();
+//		System.out.println(ipva);
 
 		meuCarro.imprimirResumoDepreciacao();
 		seuCarro.imprimirResumoDepreciacao();
