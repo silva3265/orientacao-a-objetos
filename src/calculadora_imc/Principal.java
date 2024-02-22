@@ -3,14 +3,15 @@ package calculadora_imc;
 public class Principal {
 
 	public static void main(String[] args) {
-		CalculadoraImc paciente = new CalculadoraImc();
-//		paciente.altura = 1.82;
-//		paciente.peso = 175;
+		CalculadoraImc calculadoraImc = new CalculadoraImc();
 		
-		double peso = 175;
-		double altura = 1.82;
+		Paciente joao = new Paciente();
 
-		IndiceMassaCorporal imc = paciente.calcular(peso, altura);
+		
+		joao.peso = 175;
+		joao.altura = 1.82;
+
+		IndiceMassaCorporal imc = calculadoraImc.calcular(joao);
 
 		if (imc.resultado >= 30) {
 			System.out.printf("Paciente com altura de %.2f e peso de %.2f " + "está com obesidade%n", imc.altura,
