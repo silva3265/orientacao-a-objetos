@@ -8,6 +8,10 @@ public class Produto {
 	double precoCusto;
     double precoVenda;
     
+    static double calcularCustosTotais(Produto produto) { // um metodo estatico nao pode acessar uma variavel de instancia dessa forma
+    	return produto.precoCusto + Produto.custoEmbalagem;
+    }
+    
     static void alterarCustoEmbalagem(double custoEmbalagem) {
         Produto.custoEmbalagem = custoEmbalagem;
     }
