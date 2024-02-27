@@ -2,11 +2,11 @@ package precificacao;
 
 public class ServicoDePrecificacao {
 
-	void calcularPrecoVenda(double precoCusto) {
-		// adiciona 20% de margem de lucro
-		precoCusto = precoCusto * 1.20;
+	void definirPrecoVenda(Produto produto, double percentualMargemLucro) {
+        // poderia ter cálculos muito mais complexos aqui
 
-		// faz várias outras coisas
-	}
+        produto.precoVenda = produto.precoCusto * ((percentualMargemLucro / 100) + 1); // Somando + 1 (20 / 100 = 0,20 + 1 = 1,2 -- 1,2 * 100 (preço de custo) = 100)
+    }
+
 
 }
