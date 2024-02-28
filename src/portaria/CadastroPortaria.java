@@ -9,10 +9,12 @@ public class CadastroPortaria {
 		this.cadastrar(visitante, TEMPO_EXPIRACAO_PADRAO_EM_MESES); // Recursividade - metodo dentro de outro metodo
 	}
 
-	void cadastrar(final Visitante visitante, final int tempoExpiracaoEmMeses) {
-		final int tempoExpiracaoEmDias = tempoExpiracaoEmMeses * 30; // colocalmos final para nao sofrer alterações
+	int cadastrar(final Visitante visitante, final int tempoExpiracaoEmMeses) {
+		final var tempoExpiracaoEmDias = tempoExpiracaoEmMeses * 30; // colocalmos final para nao sofrer alterações
 
 		System.out.printf("Visitante %s cadastrado para %d dias%n", visitante.nome, tempoExpiracaoEmDias);
+	
+		return 1;
 	}
 
 }
